@@ -7,12 +7,9 @@ So that I can use a good bike,
 I'd like to see if a bike is working
 
 
-|User           | Action     |
-|:-------------:|:----------:|
-|Person         |Use a bike  |
-|Docking Station|Release Bike|
-
-|User  | Action        |
-|:----:|:-------------:|
-|Person|Use a good bike|
-|Bike  |Bike is working|
+|Objects        | Messages      |
+|---------------|:-------------:|
+|Person         |Use a bike     |
+|Person         |Use a good bike|
+|Bike           |Bike is working|
+|Docking Station|Release bike   |
