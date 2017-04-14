@@ -16,8 +16,19 @@ class DockingStation
 
   def release_bike
     raise "No more bikes!" if empty?
-    raise "Sorry, no working bikes!" if bike_count.count { |obj| (obj.is_a? Bike) && (obj.working == true) } == 0
-    bike_count.pop
+
+    index_to_release = ''
+
+    @bike_count.each_with_index { |bike, index|
+      index_to_release = index if bike.working == true
+    }
+
+      if index_to_release == ''
+        raise "Sorry, no working bikes!"
+      else
+        @bike_count[index_to_release]
+      end
+
   end
 
  private
