@@ -5,4 +5,8 @@ class Bike
     @working = working
   end
 
+  def report_bike_broken
+    @working = false
+  end
+
 end
